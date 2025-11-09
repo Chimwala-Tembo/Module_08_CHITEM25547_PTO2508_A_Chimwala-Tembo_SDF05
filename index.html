@@ -10,51 +10,60 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <footer class="bg-[#659f8f]">
-      <div class="max-w-6x1 mx-auto grid grid-cols-1 md: grid-cols-2 lg:grid-cols-3 gap-8 md:gap-x-10 md:gap-y-8 lg:gap-12 items-start">
+  <body class="flex flex-col min-h-screen justify-end">
+    <footer class="bg-[#659f8f] py-12 px-6">
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-x-10 md:gap-y-8 lg:gap-12 items-start"
+      >
         <!--news letter section including email and button-->
         <div class="md:col-span-2 lg:col-span-1">
-          <h3 class="text-lg font-semibold mb-4 text-left md:text-left">Subscribe to our newsletter for updates</h3></div>
+          <h3 class="text-lg font-semibold mb-4 text-left md:text-left">
+            Subscribe to our newsletter for updates
+          </h3>
           <!--add email address & subscribe button-->
-          <div class="flex flex-col sm:flex-row justify-centre md:justify-start gap-3">
-            <input type="email" placeholder="Email Address"/>
-            <button class="w-auto">Subscribe</button>
+          <div class="flex flex-col sm:flex-row gap-3 max-w-md">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="w-full sm:w-55 rounded-md border border-gray-300 p-2 focus:outline-none bg-white placeholder-gray-500"
+            />
+            <button
+              class="bg-[#D36E4D] text-white font-semibold px-4 py-2 rounded-md w-full sm:w-auto"
+            >
+              Subscribe
+            </button>
           </div>
         </div>
 
         <!--footer links-->
         <div>
-          <h2>Quick Link</h2>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Who We Are</a></li>
-            <li><a href="#">Our Philosophy</a></li>
-            </ul>
+          <h2 class="font-semibold mb-4">Quick Link</h2>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#" class="hover:underline">Who We Are</a></li>
+            <li><a href="#" class="hover:underline">Our Philosophy</a></li>
+          </ul>
         </div>
 
         <div>
-          <h2>Technologies</h2>
-          <ul>
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">JavaScript</a></li>
-            </ul>
+          <h2 class="font-semibold mb-4">Technologies</h2>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">HTML</a></li>
+            <li><a href="#" class="hover:underline">CSS</a></li>
+            <li><a href="#" class="hover:underline">JavaScript</a></li>
+          </ul>
         </div>
 
-        
-    
-
-      <div></div>
+        <div class="border-t-2 border-[#D36E4D] w-full col-span-full"></div>
 
         <div>
-            <img
-             class="w-auto h-4"
+          <img
+            class="w-56"
             src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg"
             alt="codespace-logo"
-         />
+          />
         </div>
-    </div>
+      </div>
     </footer>
   </body>
 </html>
